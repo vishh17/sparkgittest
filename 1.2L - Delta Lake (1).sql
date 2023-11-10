@@ -93,3 +93,10 @@ WHERE name = "Eric";
 -- COMMAND ----------
 
 --------------------
+
+-- COMMAND ----------
+
+-- Stop the stream
+
+for s in spark.stream.active:
+  stream.stop()  
